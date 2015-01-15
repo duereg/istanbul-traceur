@@ -39,8 +39,7 @@
     "gulp-watch": "^1.2.0",
     "istanbul": "^0.3.2",
     "jshint-stylish": "^1.0.0",
-    "mocha": "^2.0.1",
-    "traceur": "0.0.74"
+    "mocha": "^2.0.1"
   },
   "peerDependencies": {
     "istanbul": "^0.3.2"
