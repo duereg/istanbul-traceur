@@ -23,7 +23,6 @@
     "esprima": "^1.2.2",
     "extend": "^2.0.0",
     "istanbul": "duereg/istanbul",
-    "parent-require": "^1.0.0",
     "source-map": "^0.1.40"
   },
   "devDependencies": {
