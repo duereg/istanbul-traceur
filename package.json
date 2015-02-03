@@ -1,6 +1,6 @@
 {
   "name": "istanbul-traceur",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Provides alternative version of Istanbul which supports Traceur.",
   "keywords": [
     "istanbul",
