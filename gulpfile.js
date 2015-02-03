@@ -27,12 +27,12 @@ gulp.task('lint', function () {
 
 gulp.task('test', function (cb) {
   gulp.src(path.code)
-    .pipe($.istanbul({
+    .pipe($.coffeeIstanbul({
       includeUntested: true
     }))
     .on('finish', function () {
       test(gulp.src(path.test))
-        .pipe($.istanbul.writeReports())
+        .pipe($.coffeeIstanbul.writeReports())
         .on('end', cb);
     });
 });
@@ -52,11 +52,6 @@ gulp.task('watch', function () {
       path.testSetup,
       path.testResources
     ], [ 'test' ]);
-});
-
-gulp.task('coveralls', [ 'lint', 'test' ], function () {
-  return gulp.src('coverage/lcov.info')
-    .pipe($.coveralls());
 });
 
 function lint(src) {
